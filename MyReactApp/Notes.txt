@@ -1,0 +1,29 @@
+date: 2/feb/2026
+
+Creation of Very first App
+
+Step 1. Open terminal in VSCode
+Step 2. write
+		npm create vite@latest <appname>
+		press enter and wait till scaffolding get done
+need to choose React in frame work 
+and javascript in Language
+press enter and then enter
+
+
+
+Step 4. Make changes in function App() in app.js folder in src folder
+step 5. Erase everything in return() and type your meassage using h1 or h2 tags
+
+******************************************************
+Components
+date:5th feb 2026
+
+Step 1: Right click at src folder and create new folder with name Components
+Step 2.Right click on components folder and create new file with name Header.jsx
+step 3.Write functional component in Header .jsx
+Step 4. Import Header.jsx in App.jsx(like import Header from './components/Header.jsx)
+Step 5. Inside return of App.jsx call Header(like <Header />)
+Step 6. Now similarly Footer.jsx can be created and use
+Step 7. Create css for Header and Footer inside component folder with name Header.css and Footer.css respectively
+Step 8. Simply import it in respective Jsx file. 
