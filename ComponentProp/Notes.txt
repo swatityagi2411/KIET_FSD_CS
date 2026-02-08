@@ -1,0 +1,80 @@
+Props
+1.simple prop
+ex:
+function Header(props){
+return(
+<h1>{props.title}</h1>
+)
+
+}
+in app.jsx
+<Header title="My App">
+*********************************************************************************************************************
+2. Introduce props is standard key word can be replace with any thing
+
+function Header(obj){
+return(
+<h1>{obj.title}</h1>
+)
+
+}
+*********************************************************************************************************************
+3.Introduce multiple props handling
+function Footer(props){
+return(
+<p>{props.year}   {Props.company}</p>
+)
+
+}
+in app.jsx
+<Footer year=2006 company="KIET">
+*********************************************************************************************************************
+4.introduce array and objects as props
+a)Array
+
+function App{
+let year=[2006,2007,2008];
+return(
+<Footer year={x} company = "Xebia">
+)}
+
+b) Object
+
+function App{
+let c={name:"Xebia", location:"Gurgaon"};
+return(
+<Footer year={x} company = {c}>
+)}
+
+in footer print it like{prop.company.location}
+
+*********************************************************************************************************************
+5. Props Destructuring
+
+a)You can limit the properties a component receives by using destructuring.
+in Footer.jsx
+<footer className="footer">
+      <p>© {year} </p>
+    </footer>
+
+in app.jsx
+<Footer year="2026" company="Xebia" />
+
+
+b) You can also destruct the properties you need inside the component.
+
+This way, the component receives all the properties, but the destructuring makes sure it only uses the ones it needs.
+
+in app.jsx 
+<Footer year="2026" company="Xebia" field="IT" />
+
+in footer.jsx
+
+function Footer(props) {
+  const{year ,company} = props;
+  return (
+    <footer className="footer">
+      <p>© {year}{company} </p>
+    </footer>
+  );
+}
