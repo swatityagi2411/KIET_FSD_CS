@@ -1,0 +1,14 @@
+body{
+    margin:0;
+    display:flex;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    justify-content: center;
+    align-items:center;
+}
+.container{
+    background: white;
+  width: 400px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
