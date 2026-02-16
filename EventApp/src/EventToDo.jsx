@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import './EventToDo.css'
 export default function EventToDo()
 {  
 /*    function handleSubmit(e)
@@ -65,7 +65,7 @@ export default function EventToDo()
 
 
     return(
-        <>
+        <div className="todo-container">
       <h1>To Do List</h1>
 
       <form onSubmit={handleSubmit}>
@@ -91,6 +91,6 @@ export default function EventToDo()
           </li>
         ))}
       </ul>
-    </>
+    </div>
 );
 }

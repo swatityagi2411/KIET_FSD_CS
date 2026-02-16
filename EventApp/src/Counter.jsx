@@ -3,10 +3,10 @@ export default function Counter()
 {
     const [count,setCount]=useState(0);
 
-    function handleIncrement(){
+  /*  function handleIncrement(){
         setCount(count=>count+1);
         console.log(count);
-    }
+    }*/
 function handleDecrement(){
       if(count===0){
         alert("Cant decrease now");
