@@ -1,9 +1,10 @@
 import "./Footer.css";
 
-function Footer() {
+function Footer(props) {
+  const{year ,company} = props;
   return (
     <footer className="footer">
-      <p>© 2026 My React Website</p>
+      <p>© {year}{company} </p>
     </footer>
   );
 }

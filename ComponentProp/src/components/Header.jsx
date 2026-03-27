@@ -1,8 +1,10 @@
-export default function Header({title})
+export default function Header({card})
 {
 return(
+    
 <header>
-<h1>{title}</h1>
+
+{card}
 
 <nav>
     <a href="#">Home</a>

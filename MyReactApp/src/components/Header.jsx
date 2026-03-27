@@ -1,9 +1,9 @@
 import "./Header.css";
 
-function Header() {
+function Header(obj) {
   return (
     <header className="header">
-      <h1>My React Website</h1>
+      <h1>{obj.title}</h1>
       <nav>
         <a href="#">Home</a>
         <a href="#">About</a>

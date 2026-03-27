@@ -1,10 +1,9 @@
-export function UserCArd({user}){
-
+export function UserCArd({data}){
     return(
-        <div>
-            <h3>User Name:{user.name}</h3>
-            <p>Role:{user.role}</p>
-            <p>Country:{user.country}</p>
-        </div>
+<div>
+<h4>Name:{data.name}</h4>
+<p>Role:{data.role}</p>
+<p>Country:{data.country}</p>
+</div>
     );
 }

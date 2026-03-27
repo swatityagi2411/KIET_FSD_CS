@@ -4,10 +4,9 @@ export function Wrapper({title,children})
         <div>
             <h2>{title}</h2>
             <div>
-            {children}
-
-            
+                {children}
             </div>
         </div>
     );
+
 }
