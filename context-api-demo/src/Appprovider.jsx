@@ -1,6 +1,6 @@
 //import {useState} from 'react';//no need with reducer
 import { useContext, useReducer } from 'react';
-import{ThemeContext,UserContext,LangContext} from './context';
+import{GlobalContext} from './context';
 
 //2. create reducer function
 
@@ -56,14 +56,9 @@ const Appprovider=({children})=>{
 
         //instead of passing seperate state and its handler or setter we are passing common state object and dipatcher
         return(
-<ThemeContext.Provider value={{state,dispatch}}>
-    <UserContext.Provider value={{state,dispatch}}>
-        <LangContext.Provider value={{state,dispatch}}>
-            {children}
-        </LangContext.Provider>
-
-    </UserContext.Provider>
-</ThemeContext.Provider>
+<GlobalContext.Provider value={{state,dispatch}}>
+    {children}
+</GlobalContext.Provider>
 )
 }
 

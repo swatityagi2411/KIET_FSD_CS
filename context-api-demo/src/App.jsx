@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import{ThemeContext,UserContext,LangContext} from './context';
+import{ GlobalContext} from './context';
 
 const App=()=>{
 
@@ -7,7 +7,7 @@ const App=()=>{
   const {user,setUser}=useContext(UserContext);
   const {lang,setLang}=useContext(LangContext);*/
 
-     const {state,dispatch}=useContext(ThemeContext);
+     const {state,dispatch}=useContext(GlobalContext);
     const {theme,user,lang}=state;
 
   return(
@@ -17,8 +17,12 @@ const App=()=>{
       <p>Lang:{lang}</p>
 
       <button onClick={()=>dispatch({type:"TOGGLE_THEME"})}>ThemeChange</button>
-      <button onClick={()=>dispatch({type:"USE_LANG"})}>en</button>
-      <button onClick={()=>dispatch({type:"USE_LANG"})}>fr</button>
+      <button onClick={() => dispatch({ type: "SET_LANG", payload: "en" })}>
+  en
+</button>
+      <button onClick={() => dispatch({ type: "SET_LANG", payload: "fr" })}>
+  fr
+</button>
 
 
 
