@@ -4,7 +4,7 @@ import { useState } from "react";
 
 function Todo() {
   const [text, setText] = useState("");
-  const todos = useSelector(state => state.todos);
+  const todos = useSelector(state => state.todo.todos);
   const dispatch = useDispatch();
 
   return (
