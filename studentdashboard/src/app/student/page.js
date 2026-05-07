@@ -13,7 +13,7 @@ export default function Students() {
 
       {students.map((s) => (
         <div key={s.id} className="card">
-          <Link href={`/students/${s.id}`}>
+          <Link href={`/student/${s.id}`}>
             {s.name}
           </Link>
         </div>

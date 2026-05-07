@@ -1,14 +1,14 @@
 import Link from "next/link";
 
-export default function StudentDetails({ params }) {
-
+export default async function StudentDetails({ params }) {
+ const { id } = await params;
   const students = [
     { id: "1", name: "Rahul Sharma", course: "React" },
     { id: "2", name: "Ananya Gupta", course: "Next.js" },
     { id: "3", name: "Amit Verma", course: "Node.js" }
   ];
-
-  const student = students.find(s => s.id === params.id);
+console.log(params);
+  const student = students.find(s => s.id === id);
 
   return (
     <div>
